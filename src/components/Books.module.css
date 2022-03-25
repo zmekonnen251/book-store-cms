@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.circle {
+  width: 80px;
+  height: 80px;
+}
+
+.bookCard {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  border-radius: 5px;
+  padding: 3%;
+  background-color: #fff;
+}
+
+.bookInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+}
+
+.bookInfo div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.author {
+  color: #121212;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+  color: #121212;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.catagory {
+  color: #121212;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.action {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 5px;
+  opacity: 0.5;
+}
+
+.button {
+  background-color: #007fff;
+  color: white;
+  padding: 0.2rem;
+  font-family: 'Montserrat', sans-serif;
+  width: fit-content;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.progress {
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

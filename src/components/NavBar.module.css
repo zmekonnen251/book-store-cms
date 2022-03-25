@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+.navBar {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navBar a {
+  text-decoration: none;
+}
+
+.bookStore {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #007fff;
+}
+
+.books {
+  color: #272727;
+  font-size: 0.813rem;
+}
+
+.catagories {
+  color: #272727;
+  opacity: 0.5;
+  font-size: 0.813rem;
+}
+
+.FaUser {
+  margin-right: 10px;
+}
