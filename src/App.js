@@ -3,7 +3,6 @@ import './App.css';
 
 import NavBar from './components/NavBar';
 import BookList from './components/BookList';
-import Books from './pages/Books';
 import Catagories from './pages/Catagories';
 import NotMatch from './pages/NotMatch';
 
@@ -13,7 +12,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route exact path="/" element={<BookList />} />
-        <Route path="/books" element={<Books />} />
+        <Route path="/books" element={<BookList />} />
         <Route path="/catagories" element={<Catagories />} />
         <Route path="*" element={<NotMatch />} />
       </Routes>
