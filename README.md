@@ -14,7 +14,7 @@
 
 ### Setup
 - Open your command prompt or terminal and run.
-- [Clone the GitHub Repository](https://github.com/zmekonnen251/math-magicians.git)
+- [Clone the GitHub Repository](https://github.com/zmekonnen251/book-store-cms)
 - run this commands in your terminal:
      - `npm install`
      - `npm run build`
@@ -42,7 +42,7 @@
 
 ## Live Demo
 
-[live Demo](https://math-magincians.netlify.app/)
+[live Demo](https://jolly-stroopwafel-15a417.netlify.app/)
 
 ## 🤝 Contributing
 
