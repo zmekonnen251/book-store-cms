@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.formContainer {
+  width: 100%;
+  margin: 50px 0;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.inputBookTitle {
+  padding: 1px 5px;
+  width: 50%;
+  font-size: 1rem;
+}
+
+.catagories {
+  padding: 2px 5px;
+  font-size: 1rem;
+  flex-grow: 1;
+  width: 25%;
+}
+
+.button {
+  background-color: #007fff;
+  color: white;
+  padding: 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+  width: 20%;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
