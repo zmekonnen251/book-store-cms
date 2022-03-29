@@ -9,6 +9,12 @@ const AddBook = () => (
           type="text"
           placeholder="Book Title"
         />
+
+        <input
+          className={classes.inputBookAuthor}
+          type="text"
+          placeholder="Book Author"
+        />
         <select name="Economy" className={classes.catagories}>
           <option>Catagories</option>
           <option value="Economy">Economy</option>
