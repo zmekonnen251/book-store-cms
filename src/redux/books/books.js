@@ -1,30 +1,14 @@
-import { v4 as uuidv4 } from 'uuid';
 // Actions
 const ADD_BOOK = 'book-store-cms/Books/ADD';
 const REMOVE_BOOK = 'book-store-cms/Books/REMOVE';
 
 // Reducer
-const books = [
-  {
-    id: '1',
-    title: 'zelel',
-    author: 'zelalem',
-    category: 'Action',
-  },
-];
+const books = [];
 const booksReducer = (state = books, action = {}) => {
   switch (action.type) {
     // do reducer stuff
     case ADD_BOOK:
-      return [
-        ...state,
-        {
-          id: uuidv4(),
-          title: action.payLoad.title,
-          author: action.payLoad.author,
-          category: action.payLoad.category,
-        },
-      ];
+      return [...state, action.payLoad];
     case REMOVE_BOOK:
       return state.filter((book) => book.id !== action.payLoad.id);
     default:
@@ -33,13 +17,9 @@ const booksReducer = (state = books, action = {}) => {
 };
 
 // Action Creators
-export const addBook = (title, author, category) => ({
+export const addBook = (newBook) => ({
   type: ADD_BOOK,
-  payLoad: {
-    title,
-    author,
-    category,
-  },
+  payLoad: newBook,
 });
 
 export const removeBook = (id) => ({

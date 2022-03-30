@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/books';
-
 import classes from './AddBook.module.css';
 
 const AddBook = () => {
@@ -25,7 +25,13 @@ const AddBook = () => {
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
-    dispatch(addBook(title, author, category));
+    const newBook = {
+      id: uuidv4(),
+      title,
+      author,
+      category,
+    };
+    dispatch(addBook(newBook));
     setAuthor('');
     setTitle('');
   };
