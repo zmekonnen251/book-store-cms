@@ -42,7 +42,7 @@
 
 ## Live Demo
 
-[live Demo](https://jolly-stroopwafel-15a417.netlify.app/)
+[live Demo](https://bookstore-cms37.netlify.app/)
 
 ## 🤝 Contributing
 
