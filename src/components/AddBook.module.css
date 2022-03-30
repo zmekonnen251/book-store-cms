@@ -15,7 +15,13 @@
 
 .inputBookTitle {
   padding: 1px 5px;
-  width: 50%;
+  width: 25%;
+  font-size: 1rem;
+}
+
+.inputBookAuthor {
+  padding: 1px 5px;
+  width: 25%;
   font-size: 1rem;
 }
 

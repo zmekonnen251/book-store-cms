@@ -9,11 +9,8 @@ const categoriesReducer = (state = [], action) => {
   }
 };
 
-export const checkStatus = (bookId) => ({
+export const checkStatus = () => ({
   type: CHECKSTATUS,
-  payLoad: {
-    bookId,
-  },
 });
 
 export default categoriesReducer;

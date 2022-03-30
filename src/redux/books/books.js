@@ -1,41 +1,31 @@
-import { v4 as uuidv4 } from 'uuid';
 // Actions
 const ADD_BOOK = 'book-store-cms/Books/ADD';
 const REMOVE_BOOK = 'book-store-cms/Books/REMOVE';
 
 // Reducer
-const booksReducer = (state = [], action = {}) => {
+const books = [];
+const booksReducer = (state = books, action = {}) => {
   switch (action.type) {
     // do reducer stuff
     case ADD_BOOK:
-      return [
-        ...state,
-        {
-          bookId: uuidv4(),
-          bookTitle: action.payLoad.bookTitle,
-          bookCategory: action.payLoad.bookCategory,
-        },
-      ];
+      return [...state, action.payLoad];
     case REMOVE_BOOK:
-      return state.filter((book) => book.bookId !== action.payLoad.id);
+      return state.filter((book) => book.id !== action.payLoad.id);
     default:
       return state;
   }
 };
 
 // Action Creators
-export const addBook = (bookCategory, bookAuthor) => ({
+export const addBook = (newBook) => ({
   type: ADD_BOOK,
-  payLoad: {
-    bookAuthor,
-    bookCategory,
-  },
+  payLoad: newBook,
 });
 
-export const removeBook = (bookId) => ({
+export const removeBook = (id) => ({
   type: REMOVE_BOOK,
   payLoad: {
-    bookId,
+    id,
   },
 });
 
