@@ -4,7 +4,14 @@ const ADD_BOOK = 'book-store-cms/Books/ADD';
 const REMOVE_BOOK = 'book-store-cms/Books/REMOVE';
 
 // Reducer
-const books = [];
+const books = [
+  {
+    id: '1',
+    title: 'zelel',
+    author: 'zelalem',
+    category: 'Action',
+  },
+];
 const booksReducer = (state = books, action = {}) => {
   switch (action.type) {
     // do reducer stuff
@@ -14,6 +21,7 @@ const booksReducer = (state = books, action = {}) => {
         {
           id: uuidv4(),
           title: action.payLoad.title,
+          author: action.payLoad.author,
           category: action.payLoad.category,
         },
       ];
@@ -25,7 +33,7 @@ const booksReducer = (state = books, action = {}) => {
 };
 
 // Action Creators
-export const addBook = (title, category, author) => ({
+export const addBook = (title, author, category) => ({
   type: ADD_BOOK,
   payLoad: {
     title,
