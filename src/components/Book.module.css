@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+.percentageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .circle {
   width: 80px;
   height: 80px;
+}
+
+.border {
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 30px 30px;
 }
 
 .bookCard {

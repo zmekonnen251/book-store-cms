@@ -34,9 +34,11 @@ const Book = (props) => {
             <button type="button">Edit</button>
           </div>
         </div>
-
-        <div className={classes.circle}>
-          <CircularProgressbar value={percentage} text={`${percentage}%`} />
+        <div className={classes.percentageContainer}>
+          <div className={classes.circle}>
+            <CircularProgressbar value={percentage} text={`${percentage}%`} />
+          </div>
+          <div className={classes.border} />
         </div>
 
         <div className={classes.progress}>
