@@ -1,15 +1,21 @@
-# Bookstore: initialize project with components
+# Bookstore CMS:
 
-> This project will lay foundations for your Bookstore website. You will create the React part of the app. You will also set up routing using React Router.
-![book-store](https://user-images.githubusercontent.com/92645881/160176000-314caf17-3741-4eda-9c60-59ff8b9174a4.png)
+## Description
 
+The Bookstore is a website similar to the "Awesome Books" website built in the previous module. I created an MVP version of [Awesome Books](https://github.com/zmekonnen251/Awsome-books). it that allows the user:
+- Display a list of books.
+- Add a book.
+- Remove a selected book.
+
+By building this application, I learned how to use `React` and `Router` with `Redux`
 
 
 
 ## Built With
 
 - `JavaScript`and `CSS`
-- Frameworks : `React.js`
+- Frameworks : `React`
+- Libraries : `Redux`
 - Technologies used: `GitHub`,`Webpack`
 
 ### Setup
