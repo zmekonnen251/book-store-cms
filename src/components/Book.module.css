@@ -37,10 +37,10 @@
 .action {
   display: flex;
   gap: 5px;
-  opacity: 0.5;
 }
 
 .action button {
+  color: #3e98c7;
   width: fit-content;
   border: none;
   padding: 3px;
@@ -71,7 +71,7 @@
 }
 
 .button {
-  background-color: #007fff;
+  background-color: #3e98c7;
   color: white;
   padding: 0.2rem;
   font-family: 'Montserrat', sans-serif;
