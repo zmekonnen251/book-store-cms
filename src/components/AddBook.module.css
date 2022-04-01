@@ -6,6 +6,12 @@
   justify-content: center;
 }
 
+.addBookHeader {
+  text-align: left;
+  opacity: 0.7;
+  padding: 10px 5px;
+}
+
 .form {
   display: flex;
   flex-direction: row;
@@ -17,12 +23,14 @@
   padding: 1px 5px;
   width: 25%;
   font-size: 1rem;
+  border-radius: 10px;
 }
 
 .inputBookAuthor {
   padding: 1px 5px;
   width: 25%;
   font-size: 1rem;
+  border-radius: 10px;
 }
 
 .catagories {
@@ -30,14 +38,16 @@
   font-size: 1rem;
   flex-grow: 1;
   width: 25%;
+  border-radius: 10px;
 }
 
 .button {
-  background-color: #007fff;
+  background-color: #3e98c7;
   color: white;
   padding: 0.8rem;
   font-family: 'Montserrat', sans-serif;
   width: 20%;
   font-size: 1.2rem;
   letter-spacing: 2px;
+  border-radius: 10px;
 }

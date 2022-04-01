@@ -27,6 +27,7 @@
 
 .navBar a {
   text-decoration: none;
+  color: #3e98c7;
 }
 
 .bookStore {
@@ -38,15 +39,17 @@
 
 .books {
   color: #272727;
-  font-size: 0.813rem;
+  font-size: 0.9rem;
 }
 
 .catagories {
   color: #272727;
   opacity: 0.5;
-  font-size: 0.813rem;
+  font-size: 0.9rem;
 }
 
 .FaUser {
   margin-right: 10px;
+  color: #3e98c7;
+  cursor: pointer;
 }

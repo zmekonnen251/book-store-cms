@@ -37,6 +37,7 @@ const AddBook = () => {
   return (
     <>
       <div className={classes.formContainer}>
+        <h3 className={classes.addBookHeader}>ADD NEW BOOK</h3>
         <form className={classes.form} onSubmit={formSubmitHandler}>
           <input
             className={classes.inputBookTitle}
@@ -62,6 +63,11 @@ const AddBook = () => {
             <option value="Economy">Economy</option>
             <option value="Action">Action</option>
             <option value="Science Fiction">Science Fiction</option>
+            <option value="Classics">Classics</option>
+            <option value="Comedy Fiction">Comedy Fiction</option>
+            <option value="Detective and Mystery">Detective and Mystery</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Historical Fiction">Historical Fiction</option>
           </select>
           <button className={classes.button} type="submit">
             Add Book

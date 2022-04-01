@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+.percentageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .circle {
   width: 80px;
   height: 80px;
+}
+
+.border {
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 30px 30px;
 }
 
 .bookCard {
@@ -25,10 +37,10 @@
 .action {
   display: flex;
   gap: 5px;
-  opacity: 0.5;
 }
 
 .action button {
+  color: #3e98c7;
   width: fit-content;
   border: none;
   padding: 3px;
@@ -59,7 +71,7 @@
 }
 
 .button {
-  background-color: #007fff;
+  background-color: #3e98c7;
   color: white;
   padding: 0.2rem;
   font-family: 'Montserrat', sans-serif;
